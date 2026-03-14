@@ -21,7 +21,8 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 app.use(cors({
     origin: (origin, callback) => {
         // Allow requests with no origin (mobile apps, curl, etc.)
-        if (!origin || allowedOrigins.includes(origin)) {
+        // Ensure Vercel preview and production links are allowed
+        if (!origin || allowedOrigins.includes(origin) || origin.includes('vercel.app')) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
