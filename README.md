@@ -74,7 +74,10 @@ Render es excelente para el stack MERN/PERN. Dividiremos el despliegue en dos pa
    - **Destination**: `/index.html`
    - **Action**: `Rewrite`
 5. Configura la **Variable de Entorno** para conectarse al backend:
-   - `VITE_API_URL`: (La URL de tu API, ej: `https://vikingos-api.onrender.com/api`)
+   - `VITE_API_URL`: (La URL de tu API, ej: `https://vikingos-api.onre
+   - nder.com/api`)
 6. Despliega (Deploy).
 
 ¡Listo! Ya tendrás tu Dashboard Professional corriendo.
+@derechos reservados Jesus ruiz 2026
+
